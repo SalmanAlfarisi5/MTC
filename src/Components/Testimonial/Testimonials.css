@@ -30,6 +30,7 @@
     width: 200%;
     overflow-x: hidden;
     transition: 0.5s;
+    transform: translateX(-25%);
 }
 
 .slider ul li {
