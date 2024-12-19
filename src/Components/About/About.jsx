@@ -11,22 +11,21 @@ const About = ({setPlayState}) => {
             <img src={play_icon} alt="" className='play-icon' onClick={() => setPlayState(true)}/>
         </div>
         <div className="about-right">
-            <h3>About University</h3>
-            <h2>Nurturing Tomorrow's Leader Today</h2>
-            <p>Embark on a transformative educational journey with our
-                university's comprehensive education programs. Our cutting-edge 
-                curriculum is designed to empower students with the knowledge,
-                skulls and experiences needed to exccel in the dynamic field of
-                education
-            </p>
-            <p>With a focus on innovation, hands-on learning, and personalized
-                mentorship, our programs prepare aspiring educators to make a 
-                meaningful impact in classrooms, schools, and communities
-            </p>
-            <p>Whether you aspire to become a teacher, administrator, 
-                counselor, or educational leader, our diverse range of programs
-                offers the perfect pathway to achieve your goals and unlock 
-                your full potential in shapingn the future of education
+            <h3>About Us</h3>
+            <h2>Company Profile</h2>
+            <p>Mitra Taxindo Consulting (M-Tax) is a tax consulting company located 
+                in Jakarta that has obtained official certification and has experience 
+                in handling tax obligations for taxpayers.</p>
+            <p>M-Tax was established in response to the needs of individuals and companies to 
+                understand and comply with complex tax regulations. 
+                Taxes are one of the most important aspects of business activities, 
+                and errors in tax calculation or reporting can significantly impact a company'ss finances and reputation.</p>
+            <p>M-Tax is a solution to meet specific tax consultation needs where 
+                each company has different tax consultation requirements, 
+                depending on the type of business and income earned or received. 
+                Thus, companies can focus more on their core business activities 
+                without worrying about complex tax regulations, which can help 
+                improve operational efficiency and company productivity.
             </p>
         </div>
     </div>

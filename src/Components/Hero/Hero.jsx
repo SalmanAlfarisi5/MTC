@@ -6,12 +6,14 @@ const Hero = () => {
   return (
     <div className='hero container'>
         <div className="hero-text">
-            <h1>We ensure better education for a better world</h1>
-            <p>Our cutting-edge curriculum is designed to empower students
-                with the knowledge, skills, and experiences needed to excel in 
-                the dynamic field of education
+            <h1>Tax Consultation for your Businesses</h1>
+            <p> Tax consulting company located in Jakarta that has obtained 
+              official certification and has experience in handling tax 
+              obligations for taxpayers
             </p>
-            <button className='btn'>Explore more <img src={dark_arrow} alt="" /></button>
+            <a href="https://drive.google.com/file/d/1VKNeaj9ISnw_zEUqvzgxsu3fbFvhX7O2/view?usp=sharing" 
+            target="_blank" rel="noopener noreferrer" className="btn"> Explore more <img src={dark_arrow} alt="" />
+            </a>
         </div>
     </div>
   )

@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-        <p>© 2024 Salman. All rights reserved.</p>
+        <p>© 2024 Mitra Taxindo Consulting. All rights reserved.</p>
         <ul>
             <li>Terms of Services</li>
             <li>Privacy Policy</li>

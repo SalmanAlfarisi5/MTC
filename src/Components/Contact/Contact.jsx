@@ -15,7 +15,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "f7d7ef7a-524d-4308-97c8-561b559bf08f");
+    formData.append("access_key", "08006ccb-5fe6-4f60-b04a-91623afb8034");
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -42,15 +42,18 @@ const Contact = () => {
                 university community.
             </p>
             <ul>
-                <li> <img src={mail_icon} alt="" />Salman26080@gmail.com</li>
-                <li> <img src={phone_icon} alt="" />85913654</li>
-                <li> <img src={location_icon} alt="" />Cibubur Indah V </li>
+                <li> <img src={mail_icon} alt="" />info@mtaxindo.com</li>
+                <li> <img src={phone_icon} alt="" />085765574651</li>
+                <li> <img src={location_icon} alt="" />Wijaya Grand Centre Blok G-15 Jl. Wijaya II, 
+                RT. 006/001, Pulo, Kebayoran Baru, Jakarta Selatan.</li>
             </ul>
         </div>
         <div className="contact-col">
           <form onSubmit={onSubmit}>
             <label>Your name</label>
             <input type="text" name = 'name' placeholder='Enter your name' required/>
+            <label>Email address</label>
+            <input type="email" name="email" placeholder="Enter your email" required/>
             <label>Phone number</label>
             <input type="tel" name='phone' placeholder='Enter your mobile number' required/>
             <label>Write your message here</label>

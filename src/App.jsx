@@ -4,8 +4,8 @@ import Hero from './Components/Hero/Hero'
 import Programs from './Components/Programs/Programs'
 import Title from './Components/Title/Title'
 import About from './Components/About/About'
-import Campus from './Components/Campus/Campus'
-import Testimonials from './Components/Testimonial/Testimonials'
+import Profile from './Components/Profile/Profile'
+import Teams from './Components/Teams/Teams'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
@@ -22,10 +22,10 @@ const [playState, setPlayState] = useState(false);
         <Title subTitle='Our programs' title = 'What we offer'/>
         <Programs/>
         <About setPlayState = {setPlayState}/>
-        <Title subTitle='Gallery' title = 'Campus Photos'/>
-        <Campus/>
-        <Title subTitle='Testimonials' title = 'What Student Says'/>
-        <Testimonials/>
+        <Title subTitle='Profile' title = 'Why Choose Us?'/>
+        <Profile/>
+        <Title subTitle='' title = 'Our Teams'/>
+        <Teams/>
         <Title subTitle='Contact Us' title = 'Get in Touch'/>
         <Contact/>
         <Footer/>
