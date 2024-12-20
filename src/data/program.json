@@ -15,19 +15,19 @@
       "image": "/src/assets/program-3.png",
       "icon": "/src/assets/program-icon-3.png",
       "name": "Tax Review",
-      "text": "Tax review is a service related to the review of all existing tax obligations in a company to find out the level of compliance of taxpayers in fulfilling tax obligations (tax compliance), whether full comply, under comply, or over comply."
+      "text": "Tax review is a service related to the review of all existing tax obligations in a company to find out the level of compliance of taxpayers in fulfilling tax obligations (tax compliance), whether full comply, under comply, or over comply. Both over comply and under comply, both of which will result in losses for the company and cause the company to be examined by the tax authorities even greater. By implementing a tax review, it is expected that tax losses due to over-compliance and under-compliance can be minimized so that tax control can be implemented."
     },
     {
       "image": "/src/assets/program-1.png",
       "icon": "/src/assets/program-icon-1.png",
       "name": "Tax Management",
-      "text": "Tax Management is a management strategy for controlling, planning, and organizing aspects of taxation to benefit the company’s business value while continuing to carry out tax obligations according to regulations and laws."
+      "text": "Tax Management is a tax service in supporting Taxpayers to carry out Tax Management. Tax management is a management strategy for controlling, planning, and organizing aspects of taxation from a side that can benefit the company's business value while continuing to carry out tax obligations according to regulations and laws. Tax Management is a means of fulfilling tax obligations properly and effectively."
     },
     {
       "image": "/src/assets/program-2.png",
       "icon": "/src/assets/program-icon-2.png",
       "name": "Tax Audit",
-      "text": "Services provided when a taxpayer requires assistance in a tax audit. These services are provided to manage or fulfill summons from the Tax Service Office."
+      "text": "Services provided when a taxpayer requires assistance in a tax audit. These services are provided among other things to manage or fulfill summons from the Tax Service Office. Tax audit assistance is carried out by providing assistance and becoming the attorney who will represent all the interests of the client during the audit process. The Tax Consultant, after being granted the power of attorney, will have the authority to represent the Taxpayer in answering or providing the necessary evidence in the tax audit process."
     },
     {
       "image": "/src/assets/program-3.png",
@@ -50,8 +50,14 @@
     {
       "image": "/src/assets/program-3.png",
       "icon": "/src/assets/program-icon-3.png",
+      "name": "Tax Training",
+      "text": "A. Seminar / Workshop: Seminar / Workshop activities are designed for taxpayers who are interested in the latest information in the field of taxation in order to develop knowledge that will impact taxpayer business practices. B. In-House Training (IHT): In-house training activities are training activities that can be designed and developed according to the company's internal needs to improve and update the knowledge and skills of employees in the field of taxation."
+    },
+    {
+      "image": "/src/assets/program-1.png",
+      "icon": "/src/assets/program-icon-1.png",
       "name": "Accounting",
-      "text": "Accounting is a service that deals with the process of recording financial transactions and is a part of the accounting process in businesses and other organizations."
+      "text": "Accounting is a service that deals with the process of recording financial transactions and is a part of the accounting process in businesses and other organizations. This involves preparing source documents for all transactions, operations, and other business activities."
     }
-  ]
+]
   

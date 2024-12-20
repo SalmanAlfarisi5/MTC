@@ -4,10 +4,10 @@ import programsData from "../../data/program.json";
 
 const Programs = () => {
   const [modalVisible, setModalVisible] = useState(false);
-  const [modalText, setModalText] = useState("");
+  const [modalContent, setModalContent] = useState({ title: "", text: "" });
 
-  const openModal = (text) => {
-    setModalText(text);
+  const openModal = (title, text) => {
+    setModalContent({ title, text });
     setModalVisible(true);
   };
 
@@ -24,7 +24,7 @@ const Programs = () => {
           <div
             className="program"
             key={index}
-            onClick={() => openModal(program.text)}
+            onClick={() => openModal(program.name, program.text)}
           >
             <img src={program.image} alt={program.name} />
             <div className="caption">
@@ -38,7 +38,8 @@ const Programs = () => {
       {modalVisible && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <p>{modalText}</p>
+            <h3 className="modal-title">{modalContent.title}</h3>
+            <p>{modalContent.text}</p>
           </div>
         </div>
       )}
