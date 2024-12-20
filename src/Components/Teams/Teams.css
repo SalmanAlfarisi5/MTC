@@ -106,10 +106,10 @@
 
 .slider ul {
     display: flex;
-    width: 200%;
+    width: 250%;
     overflow-x: hidden;
     transition: 0.5s;
-    transform: translateX(-25%);
+    transform: translateX(-20%);
 }
 
 .slider ul li {
