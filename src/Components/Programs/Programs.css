@@ -9,6 +9,11 @@
     transition: filter 0.3s ease-in-out;
 }
 
+.program:last-child {
+    margin: 0 auto;
+    flex-basis: 31%;
+}
+
 .program img {
     width: 100%;
     border-radius: 10px;
