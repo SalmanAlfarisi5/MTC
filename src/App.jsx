@@ -4,7 +4,7 @@ import Hero from './Components/Hero/Hero'
 import Programs from './Components/Programs/Programs'
 import Title from './Components/Title/Title'
 import About from './Components/About/About'
-import Profile from './Components/Profile/Profile'
+import Clients from './Components/Clients/Clients'
 import Teams from './Components/Teams/Teams'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
@@ -22,8 +22,8 @@ const [playState, setPlayState] = useState(false);
         <Title subTitle='Our programs' title = 'What we offer'/>
         <Programs/>
         <About setPlayState = {setPlayState}/>
-        <Title subTitle='Profile' title = 'Why Choose Us?'/>
-        <Profile/>
+        <Title subTitle='Clients' title = 'Companies that Choose Us'/>
+        <Clients/>
         <Title subTitle='' title = 'Our Teams'/>
         <Teams/>
         <Title subTitle='Contact Us' title = 'Get in Touch'/>
