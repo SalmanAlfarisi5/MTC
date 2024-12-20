@@ -1,23 +1,21 @@
-import React from 'react'
-import './Clients.css'
-import gallery_1 from '../../assets/gallery-1.png'
-import gallery_2 from '../../assets/gallery-2.png'
-import gallery_3 from '../../assets/gallery-3.png'
-import gallery_4 from '../../assets/gallery-4.png'
-import white_arrow from '../../assets/white-arrow.png'
+import React from "react";
+import "./Clients.css";
+import clientsData from "../../data/client.json";
 
 const Clients = () => {
   return (
-    <div className='clients'>
-        <div className="gallery">
-            <img src={gallery_1} alt="" />
-            <img src={gallery_2} alt="" />
-            <img src={gallery_3} alt="" />
-            <img src={gallery_4} alt="" />
-        </div>
-        <button className='btn dark-btn'>See more here <img src={white_arrow} alt="" /></button>
+    <div className="clients">
+      <div className="gallery">
+        {clientsData.map((client, index) => (
+          <div className="client" key={index}>
+            <img src={client.image} alt={client.name} />
+            <p>{client.name}</p>
+          </div>
+        ))}
+      </div>
+      <button className="btn dark-btn">See more here</button>
     </div>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;
