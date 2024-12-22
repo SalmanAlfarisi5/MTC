@@ -21,23 +21,38 @@ const ChatbotWidget = () => {
     setMessages(newMessages);
     setUserMessage("");
 
-    // Call the Vetx API to get a response
     try {
-        const response = await fetch(API_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Apikey": "Api-Key z5gNS0MB.zC4LTiNkrRU5s7ej7TaudJo2iAnFXxu1",
-          },
-          body: JSON.stringify({ payload: userMessage }),
-        });
-        const data = await response.json();
-        console.log("API Response:", data);
-        setMessages((prev) => [...prev, { text: data.response, sender: "bot" }]);
-      } catch (error) {
-        console.error("Error fetching response:", error);
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Apikey": "Api-Key z5gNS0MB.zC4LTiNkrRU5s7ej7TaudJo2iAnFXxu1",
+        },
+        body: JSON.stringify({ payload: userMessage }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      
+
+      const data = await response.json();
+      if (data?.text) {
+        // Add the bot's response to the chat
+        setMessages((prev) => [...prev, { text: data.text, sender: "bot" }]);
+      } else {
+        console.error("Unexpected response structure:", data);
+        setMessages((prev) => [
+          ...prev,
+          { text: "Sorry, something went wrong. Please try again.", sender: "bot" },
+        ]);
+      }
+    } catch (error) {
+      console.error("Error fetching response:", error);
+      setMessages((prev) => [
+        ...prev,
+        { text: "Error: Unable to reach the server. Please try again later.", sender: "bot" },
+      ]);
+    }
   };
 
   return (
