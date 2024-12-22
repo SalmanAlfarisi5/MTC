@@ -9,6 +9,7 @@ import Teams from './Components/Teams/Teams';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import WhatsappWidget from './Components/WhatsappWidget/WhatsappWidget';
+import ChatbotWidget from './Components/ChatbotWidget/ChatbotWidget';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
+      <ChatbotWidget />
       <WhatsappWidget /> 
     </div>
   );
