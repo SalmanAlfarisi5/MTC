@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import dark_arrow from '../../assets/dark-arrow.png'
+
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
               obligations for taxpayers
             </p>
             <a href="https://drive.google.com/file/d/1VKNeaj9ISnw_zEUqvzgxsu3fbFvhX7O2/view?usp=sharing" 
-            target="_blank" rel="noopener noreferrer" className="btn"> Explore more <img src={dark_arrow} alt="" />
+            target="_blank" rel="noopener noreferrer" className="btn"> Explore more 
             </a>
         </div>
     </div>

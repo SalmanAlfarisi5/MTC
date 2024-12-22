@@ -8,11 +8,8 @@ import Clients from './Components/Clients/Clients'
 import Teams from './Components/Teams/Teams'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
-import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
 
 const App = () => {
-
-const [playState, setPlayState] = useState(false);
 
   return (
     <div>
@@ -21,7 +18,7 @@ const [playState, setPlayState] = useState(false);
       <div className="container">
         <Title subTitle='Our programs' title = 'What we offer'/>
         <Programs/>
-        <About setPlayState = {setPlayState}/>
+        <About/>
         <Title subTitle='Clients' title = 'Companies that Choose Us'/>
         <Clients/>
         <Title subTitle='' title = 'Our Teams'/>
@@ -30,7 +27,6 @@ const [playState, setPlayState] = useState(false);
         <Contact/>
         <Footer/>
       </div>
-      <VideoPlayer playState = {playState} setPlayState={setPlayState}/>
     </div>
   )
 }
