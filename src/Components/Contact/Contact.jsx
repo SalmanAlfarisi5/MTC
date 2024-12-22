@@ -43,9 +43,10 @@ const Contact = () => {
             </p>
             <ul>
                 <li> <img src={mail_icon} alt="" />info@mtaxindo.com</li>
-                <li> <img src={phone_icon} alt="" />085765574651</li>
-                <li> <img src={location_icon} alt="" />Wijaya Grand Centre Blok G-15 Jl. Wijaya II, 
-                RT. 006/001, Pulo, Kebayoran Baru, Jakarta Selatan.</li>
+                <li> <img src={phone_icon} alt="" />(021) 38805177</li>
+                <li> <img src={phone_icon} alt="" /> 085765574651</li>
+                <li> <img src={location_icon} alt="" />Jl. TB Simatupang, Banjarsari 1 No. 8C
+                Cilandak Barat, Jakarta Selatan 12430 </li>
             </ul>
         </div>
         <div className="contact-col">
