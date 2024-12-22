@@ -5,6 +5,7 @@ import mail_icon from '../../assets/mail-icon.png'
 import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
 import white_arrow from '../../assets/white-arrow.png'
+import whatsapp_icon from '../../assets/whatsapp-icon.png'
 
 const Contact = () => {
 
@@ -44,7 +45,7 @@ const Contact = () => {
             <ul>
                 <li> <img src={mail_icon} alt="" />info@mtaxindo.com</li>
                 <li> <img src={phone_icon} alt="" />(021) 38805177</li>
-                <li> <img src={phone_icon} alt="" /> 085765574651</li>
+                <li> <img src={whatsapp_icon} alt="" /> 085765574651</li>
                 <li> <img src={location_icon} alt="" />Jl. TB Simatupang, Banjarsari 1 No. 8C
                 Cilandak Barat, Jakarta Selatan 12430 </li>
             </ul>
