@@ -16,7 +16,6 @@ const ChatbotWidget = () => {
   const handleSendMessage = async () => {
     if (!userMessage.trim()) return;
 
-    // Add the user's message to the chat
     const newMessages = [...messages, { text: userMessage, sender: "user" }];
     setMessages(newMessages);
     setUserMessage("");
@@ -37,7 +36,6 @@ const ChatbotWidget = () => {
 
       const data = await response.json();
       if (data?.text) {
-        // Add the bot's response to the chat
         setMessages((prev) => [...prev, { text: data.text, sender: "bot" }]);
       } else {
         console.error("Unexpected response structure:", data);

@@ -78,3 +78,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 650px) {
+    .chatbot-window {
+        width: 350px;
+        height: 300px;
+    }
+}
