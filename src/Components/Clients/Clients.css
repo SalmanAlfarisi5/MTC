@@ -15,7 +15,21 @@
 
 .client {
     width: 23%;
+    height: 450px;
     text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+.client:hover {
+    background-color: #212EA0;
+    color: white;
+    transform: translateY(-5px);
 }
 
 .client img {
@@ -29,21 +43,75 @@
     font-weight: bold;
 }
 
-.btn {
-    padding: 10px 20px;
-    background-color: #212EA0;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.client-page {
+    width: 45%;
+    padding: 30px;
+    text-align: left;
 }
 
-.btn:hover {
-    background-color: #1a237e;
+.client-page img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 800px) {
-    .client {
-        width: 48%;
+.client-page .company-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
     }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .client-page {
+        height: 320px;
+    }
+
+    .client-page p {
+        font-size: 9px;
+    }
+
+    .client .company-name {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .client-page {
+        height: 300px;
+    }
+
+    .client-page p {
+        font-size: 7px;
+    }
+
+    .client .company-name {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .client-page img {
+        width: 60%;
+        margin-bottom: 4px;
+    }
+
 }

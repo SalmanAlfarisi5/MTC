@@ -1,6 +1,6 @@
 {
   "homepage": "https://SalmanAlfarisi5.github.io/MTC",
-  "name": "MTC",
+  "name": "mtc",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.1",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {
