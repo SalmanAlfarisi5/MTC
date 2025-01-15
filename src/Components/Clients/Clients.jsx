@@ -103,7 +103,7 @@ const Clients = () => {
     <div className="clients">
       <div className="gallery">
         {clientsData.map((client, index) => (
-          <div className="client client-page" key={index}>
+          <div className="client" key={index}>
             <img src={client.img} alt={client.name_en} />
             <p className="company-name">
               {language === "en" ? client.name_en : client.name_id}

@@ -14,8 +14,7 @@
 }
 
 .client {
-    width: 23%;
-    height: 450px;
+    width: 35%;
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
@@ -38,33 +37,16 @@
 }
 
 .client p {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: clamp(9px, 1.5vw, 18px);
 }
 
-.client-page {
-    width: 45%;
-    padding: 30px;
-    text-align: left;
-}
-
-.client-page img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.client-page .company-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.company-name {
+    font: bold;
 }
 
 .company-description {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
+    font-size: clamp(6px, 1.5vw, 15px);
+    color: gray;
 }
 
 @keyframes appear {
@@ -77,41 +59,4 @@
         opacity: 1;
         scale: 1;
     }
-}
-
-@media (max-width: 600px) {
-    .client-page {
-        height: 320px;
-    }
-
-    .client-page p {
-        font-size: 9px;
-    }
-
-    .client .company-name {
-        font-size: 12px;
-        line-height: 1.2;
-    }
-
-}
-
-@media (max-width: 450px) {
-    .client-page {
-        height: 300px;
-    }
-
-    .client-page p {
-        font-size: 7px;
-    }
-
-    .client .company-name {
-        font-size: 10px;
-        line-height: 1.2;
-    }
-
-    .client-page img {
-        width: 60%;
-        margin-bottom: 4px;
-    }
-
 }
