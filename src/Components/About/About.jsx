@@ -23,7 +23,6 @@ const About = () => {
         <div className="about-left">
           <div className="about-image-container" onClick={openModal}>
             <img src={about_img} alt={language === "en" ? "About Us" : "Tentang Kami"} className="about-img" />
-            <div className="caption"></div>
           </div>
         </div>
         <div className="about-right">
