@@ -32,7 +32,7 @@ const Clients = () => {
         "CV. Cinta Puri Pratama is a coal mining company in South Kalimantan, Indonesia, focused on extracting and exporting coal with GAR specifications of 3,800 to 4,000. The company operates under a Mining Business Permit (IUP) and serves both domestic and international markets.",
       name_id: "Cinta Puri Pratama",
       description_id:
-        "CV. Cinta Puri Pratama adalah perusahaan pertambangan batu bara di Kalimantan Selatan, Indonesia, yang berfokus pada penambangan dan ekspor batu bara dengan spesifikasi GAR 3.800 hingga 4.000. Perusahaan ini beroperasi dengan Izin Usaha Pertambangan (IUP) dan melayani pasar domestik maupun internasional.",
+        "CV. Cinta Puri Pratama adalah perusahaan pertambangan batu bara di Kalimantan Selatan, Indonesia, yang berfokus pada penambangan dan ekspor batu bara dengan spesifikasi GAR 3.800 hingga 4.000. Perusahaan ini beroperasi denganIUP dan melayani pasar domestik maupun internasional.",
     },
     {
       img: photo3,
