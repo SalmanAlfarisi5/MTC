@@ -101,7 +101,7 @@ const Contact = () => {
             name="phone"
             placeholder={
               language === "en"
-                ? "Enter your mobile number"
+                ? "Enter your  number"
                 : "Masukkan nomor telepon Anda"
             }
             required
