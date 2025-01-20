@@ -53,7 +53,7 @@ const MainContent = () => {
           path="/teams"
           element={
             <>
-              <Title subTitle="" title="Our Teams" />
+              <Title subTitle="Professional Partners" title="Our Teams" />
               <Teams />
             </>
           }

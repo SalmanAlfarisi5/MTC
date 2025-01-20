@@ -90,7 +90,7 @@ const Teams = () => {
   const slider = useRef();
   const [modalVisible, setModalVisible] = useState(false);
   const [modalContent, setModalContent] = useState({ text: "", img: "" });
-  const { language } = useLanguage(); // Get the current language
+  const { language } = useLanguage(); 
   let tx = 0;
 
   const slideForward = () => {
