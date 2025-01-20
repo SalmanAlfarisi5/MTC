@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Clients.css";
 import { useLanguage } from "../../LanguageContext";
 import photo1 from "../../assets/photo-1.png";
@@ -13,7 +13,20 @@ import photo9 from "../../assets/photo-9.png";
 
 const Clients = () => {
 
-  const { language } = useLanguage(); 
+  const [modalVisible, setModalVisible] = useState(false);
+  const [modalContent, setModalContent] = useState({ title: "", text: "" });
+  const { language } = useLanguage();
+
+  const openModal = (title, text) => {
+    setModalContent({ title, text });
+    setModalVisible(true);
+  };
+
+  const closeModal = (e) => {
+    if (e.target.className === "modal") {
+      setModalVisible(false);
+    }
+  };
 
   const clientsData = [
     {
@@ -103,19 +116,25 @@ const Clients = () => {
     <div className="clients">
       <div className="gallery">
         {clientsData.map((client, index) => (
-          <div className="client" key={index}>
+          <div className="client" key={index} onClick={() =>
+                openModal(
+                  language === "en" ? client.name_en : client.name_id,
+                  language === "en" ? client.description_en : client.description_id
+                )
+              }>
             <img src={client.img} alt={client.name_en} />
-            <p className="company-name">
-              {language === "en" ? client.name_en : client.name_id}
-            </p>
-            <p className="company-description">
-              {language === "en"
-                ? client.description_en
-                : client.description_id}
-            </p>
           </div>
         ))}
       </div>
+
+      {modalVisible && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content">
+            <h3>{modalContent.title}</h3>
+            <p>{modalContent.text}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
