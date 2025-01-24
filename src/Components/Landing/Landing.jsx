@@ -12,8 +12,6 @@ const Landing = () => {
       <div id = "about">
         <About/>
       </div>
-      <Title title="Find Us" />
-      <Map/>
       <Title subTitle="Contact Us" title="Get in Touch" />
       <Contact/>
       </>
@@ -21,3 +19,4 @@ const Landing = () => {
 };
 
 export default Landing;
+
