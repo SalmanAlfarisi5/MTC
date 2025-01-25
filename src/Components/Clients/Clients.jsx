@@ -136,7 +136,7 @@ const Clients = () => {
   const [direction, setDirection] = useState("right");
   let tx = 0;
 
-  /*
+
   useEffect(() => {
     const interval = setInterval(() => {
       if (direction === "right") {
@@ -147,7 +147,7 @@ const Clients = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, [direction]);
-  */
+
 
   const slideForward = () => {
     if (tx > -66.6) {
