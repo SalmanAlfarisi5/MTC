@@ -68,7 +68,6 @@ const MainContent = () => {
           }
         />
       </Routes>
-      <Footer/>
     </>
   );
 };

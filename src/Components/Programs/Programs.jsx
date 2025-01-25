@@ -14,6 +14,7 @@ import icon1 from "../../assets/program-icon-1.png";
 import icon2 from "../../assets/program-icon-2.png";
 import icon3 from "../../assets/program-icon-3.png";
 import { useLanguage } from "../../LanguageContext";
+import Footer from '../../Components/Footer/Footer'
 
 const programsData = {
   en: [
@@ -160,6 +161,7 @@ const Programs = () => {
   };
 
   return (
+    <>
     <div className="programs">
       {programsData[language].map((program, index) => (
         <div className="program-card" key={index}>
@@ -186,6 +188,8 @@ const Programs = () => {
         </div>
       )}
     </div>
+    <Footer/>
+    </>
   );
 };
 

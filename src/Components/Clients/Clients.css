@@ -1,48 +1,182 @@
 .clients {
     margin: 80px auto;
-    width: 90%;
-    text-align: center;
+    padding: 0 80px;
+    position: relative;
+    transition: filter 0.3s ease-in-out;
 }
 
-.gallery {
+.blurred {
+    filter: blur(5px);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
 }
 
-.client {
-    width: 25%;
-    text-align: center;
-    background-color: #fff;
+.modal-content {
+    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    max-height: 90%;
+    overflow-y: auto;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-content img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #1d2dbd;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.client:hover {
-    background-color: #1d2dbd;
-    color: white;
-    transform: translateY(-5px);
-
+.next-btn,
+.back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    background: #1d2dbd;
+    cursor: pointer;
 }
 
-.client img {
-    width: 100%;
+.next-btn:hover,
+.back-btn:hover {
+    background-color: #1a237e;
+}
+
+.client_slider {
+    overflow: hidden;
+}
+
+.client_slider ul {
+    display: flex;
+    width: 300%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.client_slider ul li {
+    list-style: none;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.client_slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
     border-radius: 10px;
+    background: #fff;
 }
 
-.client p {
-    font-size: clamp(9px, 1.5vw, 18px);
+.client_slide img {
+    width: 200px;
+    margin-bottom: 10px;
+    border: 4px solid #1d2dbd;
 }
 
-.company-name {
-    font: bold;
+.client-info {
+    text-align: center;
 }
 
-.company-description {
-    font-size: clamp(6px, 1.5vw, 15px);
-    color: gray;
+.client-info h3 {
+    color: #1d2dbd;
+}
+
+@media(max-width:1100px) {
+    .clients {
+        margin: 40px;
+    }
+
+    .client_slide {
+        padding: 20px;
+        box-shadow: 0 0 0
+    }
+
+    .client_slide img {
+        width: 160px;
+        border: none;
+    }
+
+    .client-info h3 {
+        display: none;
+    }
+
+    .read-more-btn {
+        display: none;
+    }
+
+}
+
+@media(max-width:960px) {
+    .clients {
+        margin: 20px;
+    }
+
+    .client_slide img {
+        width: 120px;
+    }
+
+}
+
+@media(max-width:810px) {
+    .clients {
+        margin: 10px;
+    }
+
+    .client_slide img {
+        width: 90px;
+    }
+}
+
+@media(max-width:690px) {
+    .clients {
+        margin: 5px;
+    }
+
+    .client_slide {
+        padding: 10px;
+    }
+
+    .client_slide img {
+        width: 75px;
+    }
+}
+
+@media(max-width:690px) {
+
+    .client_slide {
+        padding: 5px;
+    }
+
+    .client_slide img {
+        width: 60px;
+    }
 }

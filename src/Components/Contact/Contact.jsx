@@ -8,6 +8,7 @@ import white_arrow from "../../assets/white-arrow.png";
 import whatsapp_icon from "../../assets/whatsapp-icon.png";
 import { useLanguage } from "../../LanguageContext";
 import Map from '../../Components/Map/Map';
+import Footer from '../../Components/Footer/Footer';
 
 const Contact = () => {
   const { language } = useLanguage(); 
@@ -130,6 +131,7 @@ const Contact = () => {
           <span>{result}</span>
         </div>
       </div>
+      <Footer/>
     </>
     
   );

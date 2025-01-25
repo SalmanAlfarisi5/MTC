@@ -3,7 +3,7 @@ import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
 import Title from '../../Components/Title/Title';
 import Contact from '../../Components/Contact/Contact'
-import Map from '../../Components/Map/Map'
+import Footer from '../../Components/Footer/Footer'
 
 const Landing = () => {
   return (
@@ -14,6 +14,7 @@ const Landing = () => {
       </div>
       <Title subTitle="Contact Us" title="Get in Touch" />
       <Contact/>
+      <Footer/>
       </>
   );
 };
