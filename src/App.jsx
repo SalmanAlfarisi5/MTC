@@ -5,12 +5,10 @@ import Landing from './Components/Landing/Landing';
 import Programs from './Components/Programs/Programs';
 import Title from './Components/Title/Title';
 import About from './Components/About/About';
-import Clients from './Components/Clients/Clients';
-import Teams from './Components/Teams/Teams';
 import Contact from './Components/Contact/Contact';
-import Footer from './Components/Footer/Footer';
 import WhatsappWidget from './Components/WhatsappWidget/WhatsappWidget';
 import ChatbotWidget from './Components/ChatbotWidget/ChatbotWidget';
+import Teams_Clients from './Components/Teams_Clients/Teams_Clients';
 
 const App = () => {
   return (
@@ -41,20 +39,10 @@ const MainContent = () => {
         />
         <Route path="/about" element={<About />} />
         <Route
-          path="/clients"
+          path="/teams_clients"
           element={
             <>
-              <Title subTitle="Clients" title="Companies that Choose Us" />
-              <Clients />
-            </>
-          }
-        />
-        <Route
-          path="/teams"
-          element={
-            <>
-              <Title subTitle="Professional Partners" title="Our Teams" />
-              <Teams />
+              <Teams_Clients />
             </>
           }
         />

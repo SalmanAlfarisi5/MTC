@@ -125,11 +125,19 @@
 @media(max-width:810px) {
     .clients {
         margin: 10px;
+        padding: 0 40px;
     }
 
     .client_slide img {
         width: 120px;
     }
+
+    .next-btn,
+    .back-btn {
+        padding: 10px;
+        width: 35px;
+    }
+
 }
 
 @media(max-width:690px) {
@@ -142,7 +150,7 @@
     }
 
     .client_slide img {
-        width: 90px;
+        width: 100%;
     }
 
     .client-info h3 {
@@ -158,10 +166,6 @@
 
     .client_slide {
         padding: 0px;
-    }
-
-    .client_slide img {
-        width: 100%;
     }
 
     .read-more-btn {
