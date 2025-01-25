@@ -150,3 +150,22 @@
     }
 
 }
+
+@media(max-width:500px) {
+    .clients {
+        margin: 0px;
+    }
+
+    .client_slide {
+        padding: 0px;
+    }
+
+    .client_slide img {
+        width: 100%;
+    }
+
+    .read-more-btn {
+        display: none;
+    }
+
+}
