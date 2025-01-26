@@ -78,19 +78,19 @@ nav ul li {
 
     nav ul {
         position: fixed;
-        top: 10px;
+        top: 25px;
         right: 0px;
         bottom: 10;
         background: #212EA0;
         z-index: -1;
-        width: 180px;
-        padding-top: 70px;
+        width: 135px;
+        padding-top: 0px;
         transition: 0.5s;
     }
 
     nav ul li {
         display: block;
-        margin: 25px 40px;
+        margin: 25px 10px;
     }
 
     .menu-icon {
