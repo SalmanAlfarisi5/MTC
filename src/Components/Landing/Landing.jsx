@@ -14,7 +14,6 @@ const Landing = () => {
       </div>
       <Title subTitle="Contact Us" title="Get in Touch" />
       <Contact/>
-      <Footer/>
       </>
   );
 };

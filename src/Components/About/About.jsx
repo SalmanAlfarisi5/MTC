@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./About.css";
 import about_img from "../../assets/about.png";
 import { useLanguage } from "../../LanguageContext";
+import jargon1 from "../../assets/jargon1.png";
+import jargon2 from "../../assets/jargon2.png";
+import jargon3 from "../../assets/jargon3.png";
+import jargon4 from "../../assets/jargon4.png";
 
 const About = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -43,6 +47,25 @@ const About = () => {
               ? "MTC is a solution to meet specific tax consultation needs where each company has different tax consultation requirements, depending on the type of business and income earned or received. Thus, companies can focus more on their core business activities without worrying about complex tax regulations, which can help improve operational efficiency and company productivity."
               : "MTC adalah solusi untuk memenuhi kebutuhan konsultasi pajak khusus di mana setiap perusahaan memiliki kebutuhan konsultasi pajak yang berbeda, tergantung pada jenis bisnis dan pendapatan yang diperoleh atau diterima. Dengan demikian, perusahaan dapat lebih fokus pada kegiatan bisnis inti mereka tanpa khawatir dengan peraturan pajak yang kompleks, yang dapat membantu meningkatkan efisiensi operasional dan produktivitas perusahaan."}
           </p>
+        </div>
+      </div>
+
+      <div className="jargon-container">
+        <div className="jargon-item">
+          <img src={jargon1} alt="Quality Services" />
+          <h4>Quality Services</h4>
+        </div>
+        <div className="jargon-item">
+          <img src={jargon2} alt="Valuable Ideas" />
+          <h4>Valuable Ideas</h4>
+        </div>
+        <div className="jargon-item">
+          <img src={jargon3} alt="Budget Friendly" />
+          <h4>Budget Friendly</h4>
+        </div>
+        <div className="jargon-item">
+          <img src={jargon4} alt="Professional" />
+          <h4>Professional</h4>
         </div>
       </div>
 
